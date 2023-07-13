@@ -24,8 +24,8 @@ class _HomePageState extends State<HomePage> {
             children: [
               Center(
                 child: Container(
-                  height: 120,
-                  width: 120,
+                  height: 80,
+                  width: 80,
                   margin: const EdgeInsets.only(top: 4),
                   decoration: const BoxDecoration(
                     color: Pallete.assistantCircleColor,
@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               Container(
-                height: 123,
+                height: 83,
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   image: DecorationImage(
@@ -53,8 +53,8 @@ class _HomePageState extends State<HomePage> {
               vertical: 10,
             ),
             margin: const EdgeInsets.symmetric(
-                horizontal: 40
-            ).copyWith(top: 30),
+                horizontal: 20
+            ).copyWith(top: 10),
             decoration: BoxDecoration(
                 border: Border.all(
                   color: Pallete.borderColor,
@@ -65,12 +65,12 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             child:  const Padding(
-              padding: EdgeInsets.symmetric(vertical: 10.0),
+              padding: EdgeInsets.symmetric(vertical: 5.0),
               child: Text('Good Morning, what task can I do for you? ',
                 style: TextStyle(
                   fontFamily: 'Cera Pro',
                 color: Pallete.mainFontColor,
-                fontSize: 25,
+                fontSize: 16,
               ),
               ),
             ),
@@ -105,11 +105,11 @@ class _HomePageState extends State<HomePage> {
                 headerText: 'Dall-E',
                 descriptionText: 'Get inspired and stay creative with your personal assistant powered by Dall-E',
               ),
-              // FeatureBox(
-              //   color: Pallete.thirdSuggestionBoxColor,
-              //   headerText: 'Smart Voice Assistant',
-              //   descriptionText: 'Get the best of both worlds with a voice assistant powered by Dall-E and ChatGPT',
-              // ),
+              FeatureBox(
+                color: Pallete.thirdSuggestionBoxColor,
+                headerText: 'Smart Voice Assistant',
+                descriptionText: 'Get the best of both worlds with a voice assistant powered by Dall-E and ChatGPT',
+              ),
             ],
           )
         ],
